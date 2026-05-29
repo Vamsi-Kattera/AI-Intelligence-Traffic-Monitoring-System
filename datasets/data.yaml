@@ -1,0 +1,10 @@
+train: E:/traffic-intelligence-system/datasets/traffic_collision/images/train
+val: E:/traffic-intelligence-system/datasets/traffic_collision/images/val
+test: E:/traffic-intelligence-system/datasets/traffic_collision/images/test
+
+nc: 4
+names:
+  0: bike
+  1: car
+  2: truck
+  3: bus

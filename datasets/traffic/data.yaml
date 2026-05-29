@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['bus', 'car', 'truck', 'van']
+
+roboflow:
+  workspace: vehicle-detection-loakn
+  project: ua-detrac-10k-sample
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/vehicle-detection-loakn/ua-detrac-10k-sample/dataset/1
