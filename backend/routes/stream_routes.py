@@ -12,7 +12,15 @@ from backend.config import USE_WEBCAM, VIDEO_PATH
 
 router = APIRouter()
 
-model = YOLO("backend/models/best.pt")
+from pathlib import Path
+from ultralytics import YOLO
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "models" / "best.pt"
+
+print("Loading model from:", MODEL_PATH)
+
+model = YOLO(str(MODEL_PATH))
 
 analytics_service = AnalyticsService()
 
